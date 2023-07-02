@@ -3,6 +3,7 @@ import Login from '@/views/Login/index.vue'
 import Layout from '@/views/Layout/index.vue'
 import Home from '@/views/Home/index.vue'
 import Category from '@/views/Category/index.vue'
+import Detail from '@/views/Detail/index.vue'
 import Subcategory from '@/views/Subcategory/index.vue'
 
 const router = createRouter({
@@ -28,6 +29,11 @@ const router = createRouter({
           component: Subcategory
         }
       ]
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: Detail
     },
     {
       path: '/login',
