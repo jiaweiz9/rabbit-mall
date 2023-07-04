@@ -27,13 +27,13 @@ const router = createRouter({
           path: '/category/sub/:id',
           name: 'subcategory',
           component: Subcategory
+        },
+        {
+          path: '/detail/:id',
+          name: 'detail',
+          component: Detail
         }
       ]
-    },
-    {
-      path: '/detail/:id',
-      name: 'detail',
-      component: Detail
     },
     {
       path: '/login',

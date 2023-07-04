@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 
 import { directivePlugin } from '@/directives/lazyplugin'
+import { componentPlugin } from "@/components";
 
 import '@/styles/common.scss'
 
@@ -14,5 +15,5 @@ app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
-
+app.use(componentPlugin)
 app.use(directivePlugin)
