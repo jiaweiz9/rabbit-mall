@@ -41,13 +41,13 @@ const createOrder = async () => {
     addressId: curAddress.value.id
   })
   const orderId = res.result.id
-  router.push({
+  await router.push({
     path: '/pay',
     query: {
       id: orderId
     }
   })
-  cartStore.updateNewList()
+  await cartStore.updateNewList()
 }
 </script>
 
